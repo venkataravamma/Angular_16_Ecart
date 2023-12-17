@@ -1,0 +1,11 @@
+<p>Name:{{ product.name }}</p>
+<p>Price:{{ "$" + product.price }}</p>
+<p>Color:{{ product.color }}</p>
+<p>Disconted price:{{ getDiscountItems() }}</p>
+<p>
+  {{
+    product.inStock > 0
+      ? "only " + product.price + " items in stock"
+      : "No iteam in stock"
+  }}
+</p>
