@@ -19,7 +19,7 @@ export class ProductListComponent {
     color: 'red',
     discount: 8.5,
     inStock: 10,
-    pimage: '/assets/images/one.jpeg',
+    pimage: '/assets/images/iphone.png',
   };
 
   getDiscountItems() {
