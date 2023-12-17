@@ -1,14 +1,25 @@
-<img [src]="product.pimage" />
-<p>Name:{{ product.name }}</p>
-<p>Price:{{ "$" + product.price }}</p>
-<p>Color:{{ product.color }}</p>
-<p>Disconted price:{{ getDiscountItems() }}</p>
-<p>
-  {{
-    product.inStock > 0
-      ? "only " + product.price + " items in stock"
-      : "No iteam in stock"
-  }}
-</p>
-<button [disabled]="!(product.inStock > 0)">Buy Now</button>
-<input type="text" [value]="name" [attr.aria-hidden]="" />
+<div>
+  <img [src]="product.pimage" />
+  <p>Name:{{ product.name }}</p>
+  <p>Price:{{ "$" + product.price }}</p>
+  <p>Color:{{ product.color }}</p>
+  <p>Disconted price:{{ getDiscountItems() }}</p>
+  <p>
+    {{
+      product.inStock > 0
+        ? "only " + product.inStock + " items in stock"
+        : "No iteam in stock"
+    }}
+  </p>
+  <button (click)="decrementCartValue()">-</button>
+  <span>{{ addToCart }}</span>
+  <button (click)="incrementCartValue()">+</button>
+  <button [disabled]="!(product.inStock > 0)">Buy Now</button>
+  <input
+    type="text"
+    [value]="name"
+    [attr.aria-hidden]=""
+    (input)="onNameChange($event)"
+  /><br />
+  <p>Name:{{ name }}</p>
+</div>
