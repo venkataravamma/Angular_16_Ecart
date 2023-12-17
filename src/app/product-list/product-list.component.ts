@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
-  // name: string = 'iphone 13';
+  name: string = 'venky';
   // price: number = 999;
   // color: string = 'red';
   // discount: number = 8.5;
@@ -17,7 +17,8 @@ export class ProductListComponent {
     price: 999,
     color: 'red',
     discount: 8.5,
-    inStock: 0,
+    inStock: 10,
+    pimage: '/assets/images/one.jpeg',
   };
 
   getDiscountItems() {
