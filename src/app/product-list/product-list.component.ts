@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./product-list.component.css'],
 })
 export class ProductListComponent {
+  // listOfString: string[] = ['venky', 'nag', 'sujiki', 'veekshit', 'kumari'];
   addToCart = 0;
   name = 'venky';
   // price: number = 999;
