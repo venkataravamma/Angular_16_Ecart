@@ -9,6 +9,7 @@ export class ContainerComponent {
   // listOfString: string[] = ['venky', 'nag', 'sujiki', 'veekshit', 'kumari'];
   addToCart = 0;
   name = 'venky';
+  searchText: string = '';
   // price: number = 999;
   // color: string = 'red';
   // discount: number = 8.5;
@@ -41,5 +42,9 @@ export class ContainerComponent {
   }
   onNameChange(event: any) {
     this.name = event?.target.value;
+  }
+
+  setSearchText(value: string) {
+    this.searchText = value;
   }
 }
