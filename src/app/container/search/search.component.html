@@ -8,9 +8,7 @@
     'btn-search-disabled': !searchText
   }"
   [disabled]="!searchText" -->
-  <button class="btn btn-search" (click)="updateSearchText(searchInput)">
-    Search
-  </button>
+  <button class="btn btn-search" (click)="updateSearchText()">Search</button>
 </div>
 <div class="ekart-search-result-for">
   <p *ngIf="searchText != ''">

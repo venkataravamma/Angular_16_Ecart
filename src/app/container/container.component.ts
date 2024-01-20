@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-container',
@@ -10,6 +11,7 @@ export class ContainerComponent {
   addToCart = 0;
   name = 'venky';
   searchText: string = '';
+  @ViewChild(ProductListComponent) productListComponent: ProductListComponent;
   // price: number = 999;
   // color: string = 'red';
   // discount: number = 8.5;
