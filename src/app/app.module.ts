@@ -19,6 +19,7 @@ import { ChildComponent } from './container/parent/child/child.component';
 import { TestComponent } from './container/test/test.component';
 import { SetBackground } from './CustomDirectives/SetBackground.directive';
 import { HighlightDirective } from './CustomDirectives/highlight.directive';
+import { AppHoverDirective } from './CustomDirectives/app-hover.directive';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { HighlightDirective } from './CustomDirectives/highlight.directive';
     TestComponent,
     SetBackground,
     HighlightDirective,
+    AppHoverDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
