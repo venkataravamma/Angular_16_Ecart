@@ -17,6 +17,7 @@ import { FeaturedBrandsComponent } from './container/featured-brands/featured-br
 import { ParentComponent } from './container/parent/parent.component';
 import { ChildComponent } from './container/parent/child/child.component';
 import { TestComponent } from './container/test/test.component';
+import { SetBackground } from './CustomDirectives/SetBackground.directive';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { TestComponent } from './container/test/test.component';
     ParentComponent,
     ChildComponent,
     TestComponent,
+    SetBackground,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
