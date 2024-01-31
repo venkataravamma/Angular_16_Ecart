@@ -18,6 +18,7 @@ import { ParentComponent } from './container/parent/parent.component';
 import { ChildComponent } from './container/parent/child/child.component';
 import { TestComponent } from './container/test/test.component';
 import { SetBackground } from './CustomDirectives/SetBackground.directive';
+import { HighlightDirective } from './CustomDirectives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import { SetBackground } from './CustomDirectives/SetBackground.directive';
     ChildComponent,
     TestComponent,
     SetBackground,
+    HighlightDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
