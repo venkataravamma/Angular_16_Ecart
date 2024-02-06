@@ -21,6 +21,8 @@ import { SetBackground } from './CustomDirectives/SetBackground.directive';
 import { HighlightDirective } from './CustomDirectives/highlight.directive';
 import { AppHoverDirective } from './CustomDirectives/app-hover.directive';
 import { DisbleProductDirective } from './CustomDirectives/disble-product.directive';
+import { ClassDirective } from './CustomDirectives/class.directive';
+import { StyleDirective } from './CustomDirectives/style.directive';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { DisbleProductDirective } from './CustomDirectives/disble-product.direct
     HighlightDirective,
     AppHoverDirective,
     DisbleProductDirective,
+    ClassDirective,
+    StyleDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
