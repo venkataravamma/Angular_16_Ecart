@@ -23,6 +23,7 @@ import { AppHoverDirective } from './CustomDirectives/app-hover.directive';
 import { DisbleProductDirective } from './CustomDirectives/disble-product.directive';
 import { ClassDirective } from './CustomDirectives/class.directive';
 import { StyleDirective } from './CustomDirectives/style.directive';
+import { IFDirective } from './CustomDirectives/if.directive';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { StyleDirective } from './CustomDirectives/style.directive';
     DisbleProductDirective,
     ClassDirective,
     StyleDirective,
+    IFDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
