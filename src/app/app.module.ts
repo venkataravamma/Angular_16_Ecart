@@ -20,6 +20,7 @@ import { TestComponent } from './container/test/test.component';
 import { SetBackground } from './CustomDirectives/SetBackground.directive';
 import { HighlightDirective } from './CustomDirectives/highlight.directive';
 import { AppHoverDirective } from './CustomDirectives/app-hover.directive';
+import { DisbleProductDirective } from './CustomDirectives/disble-product.directive';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { AppHoverDirective } from './CustomDirectives/app-hover.directive';
     SetBackground,
     HighlightDirective,
     AppHoverDirective,
+    DisbleProductDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
