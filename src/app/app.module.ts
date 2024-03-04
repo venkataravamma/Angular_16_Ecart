@@ -24,6 +24,7 @@ import { DisbleProductDirective } from './CustomDirectives/disble-product.direct
 import { ClassDirective } from './CustomDirectives/class.directive';
 import { StyleDirective } from './CustomDirectives/style.directive';
 import { IFDirective } from './CustomDirectives/if.directive';
+import { SwitchSampleComponent } from './switch-sample/switch-sample.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { IFDirective } from './CustomDirectives/if.directive';
     ClassDirective,
     StyleDirective,
     IFDirective,
+    SwitchSampleComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

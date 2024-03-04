@@ -1,0 +1,46 @@
+<div class="notice-container">
+  <div class="notice-header">
+    <button (click)="onInfoClicked()">Info</button>
+    <button (click)="onServiceClicked()">Service</button>
+    <button (click)="onPrivacyClicked()">Privacy</button>
+    <button (click)="onUserAggrementClicked()">User</button>
+  </div>
+  <div class="notice-body" [ngSwitch]="tab">
+    <div *ngSwitchDefault>
+      <h1>Terms of Info</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
+        nisi ac faucibus ullamcorper, eros lorem pharetra libero, ut efficitur
+        justo arcu at magna. Sed sit amet mi ac sapien placerat commodo. Sed
+        bibendum libero eu felis pulvinar aliquet.
+      </p>
+    </div>
+    <div *ngSwitchCase="'service'">
+      <h1>Terms of Services</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
+        nisi ac faucibus ullamcorper, eros lorem pharetra libero, ut efficitur
+        justo arcu at magna. Sed sit amet mi ac sapien placerat commodo. Sed
+        bibendum libero eu felis pulvinar aliquet.
+      </p>
+    </div>
+    <div *ngSwitchCase="'privacy'">
+      <h1>Terms of privacy</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
+        nisi ac faucibus ullamcorper, eros lorem pharetra libero, ut efficitur
+        justo arcu at magna. Sed sit amet mi ac sapien placerat commodo. Sed
+        bibendum libero eu felis pulvinar aliquet.
+      </p>
+    </div>
+    <div *ngSwitchCase="'user'">
+      <h1>Terms of User</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod,
+        nisi ac faucibus ullamcorper, eros lorem pharetra libero, ut efficitur
+        justo arcu at magna. Sed sit amet mi ac sapien placerat commodo. Sed
+        bibendum libero eu felis pulvinar aliquet.
+      </p>
+    </div>
+  </div>
+</div>
